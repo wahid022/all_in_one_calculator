@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>EMI Calculator</title>
+        <meta name = "description" content = "A Simple EMI Calculator.">
+        <link rel = "stylesheet" href = "emi.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    
+    <body>
+         <header id="body-header">
+        <nav>
+            <div id="logo">
+                <span>Calculator</span>
+            </div>
+
+            <ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <a href="index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="emi.html" id="about-link"> Finance </a>
+                </li>
+                <li>
+                    <a href="math.html"> Maths </a>   
+                </li>
+                <li>
+                    <a href="bmi.html">Fitness & Health</a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-profile-icon">
+              <a href="https://github.com/wahid022/">
+                <img src="profile.jpg">
+              </a>
+            </div>
+        </nav>
+  
+    </header>
+
+    <img src="emi_1.gif">
+
+    <div id="form-container">
+        
+        <h1><span>EMI Calculator</span></h1>
+        <form id = "form" onsubmit = "emiCalculate(); return false;">
+            <div class = "table">
+                <div class = "tr">
+                    <div class = "td">Loan Amount:</div>
+                    <div class = "td"><input type = "number" id = "amount" size = 11 min = 100 required autofocus /></div>
+                    <div class = "td">Principal amount repaid</div>
+                    <div class = "td"><input type = "text" id = "principalAmount" disabled></div>
+                </div>
+                <div class = "tr">
+                    <div class = "td">Loan Term (in months):</div>
+                    <div class = "td"><input type = "number" id = "term" size = 3 min = 0 max = 999 required /></div>
+                    <div class = "td">Interest amount paid</div>
+                    <div class = "td"><input type = "text" id = "interestAmount" disabled></div>
+                </div>
+                <div class = "tr">
+                    <div class = "td">Rate of Interest per Annum (in %):</div>
+                    <div class = "td"><input type = "number" id = "rate" min = 0 max = 100 step = "any" required /></div>
+                    <div class = "td">Total amount paid back </div>
+                    <div class = "td"><input type = "text" id = "totalAmount" disabled></div>
+                </div>
+                <div class = "tr">
+                    <div class = "td">EMI Amount:</div>
+                    <div class = "td"><input type = "text" id = "emi" disabled></div>
+                </div>
+            </div>
+            <div style = "text-align:center; margin-top:20px"><input type="submit" value = "Calculate EMI" /></div>
+        </form>
+        
+        <table id = "monthly" class = "emiTable"></table>
+    </div>
+
+
+    <section id="contact">
+            <h1 class="section-heading mb50px">
+                <span>
+                    <i class="far fa-address-card"></i>
+                </span>
+                <span> Contact </span>
+            </h1>
+            <div id="contact-container">
+
+                <div id="contact-form-container">
+                    <form id="contact-form">
+                        <input id="input-name" name="name" type="text" placeholder="Your Name">
+                        <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
+                        <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+                <div id="my-details-container">
+
+                    <h3> Get In touch </h3>
+                    
+
+                    <h3> My Address </h3>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jamshedpur, India</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>7903066236</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="far fa-envelope"></i>
+                        <span>rahmanwahid022@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center social-icons">
+
+                <ul class="horizontal-list">
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/wahid022/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                    
+
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100039299497875">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        
+    </body>
+    <script src = "emi.js"></script>
+    </html>

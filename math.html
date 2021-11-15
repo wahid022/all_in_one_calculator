@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript Calculator</title>
+  <link rel="stylesheet" href="math.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+   <header id="body-header">
+        <nav>
+            <div id="logo">
+                <span>Calculator</span>
+            </div>
+
+            <ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <a href="index.html"> Home </a>
+                </li>
+                <li>
+                    <a href="emi.html" id="about-link"> Finance </a>
+                </li>
+                <li>
+                    <a href="math.html"> Maths </a>   
+                </li>
+                <li>
+                    <a href="bmi.html">Fitness & Health</a>
+                </li>
+            </ul>
+
+            <div class="nav-profile-icon">
+              <a href="https://github.com/wahid022/">
+                <img src="profile.jpg">
+              </a>
+            </div>
+        </nav>
+
+        
+    </header>
+    <img src="math_1.gif">
+
+  <main class="calculator">
+        <div id="form-container">
+          <div class="top">
+
+            <span class="unit">deg</span>
+            <section class="screen">
+              <div class="input"></div>
+              <div class="result"></div>
+            </section>
+
+          </div>
+
+        <div class="bottom">
+
+          <section class="keys">
+
+            <div class="column">
+              <span data-key="7">7</span>
+              <span data-key="4">4</span>
+              <span data-key="1">1</span>
+              <span data-key=".">.</span>
+            </div>
+
+            <div class="column">
+              <span data-key="8">8</span>
+              <span data-key="5">5</span>
+              <span data-key="2">2</span>
+              <span data-key="0">0</span>
+            </div>
+
+            <div class="column">
+              <span data-key="9">9</span>
+              <span data-key="6">6</span>
+              <span data-key="3">3</span>
+              <span class="equals-to" data-key="=">=</span>
+            </div>
+          </section>
+
+          <section class="operators">
+            <span class="delete">del</span>
+            <span data-key="÷">÷</span>
+            <span data-key="x">x</span>
+            <span data-key="-">-</span>
+            <span data-key="+">+</span>
+          </section>
+
+        </div>
+    
+      </div>
+
+  </main>
+
+
+  <section id="contact">
+            <h1 class="section-heading mb50px">
+                <span>
+                    <i class="far fa-address-card"></i>
+                </span>
+                <span> Contact </span>
+            </h1>
+            <div id="contact-container">
+
+                <div id="contact-form-container">
+                    <form id="contact-form">
+                        <input id="input-name" name="name" type="text" placeholder="Your Name">
+                        <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
+                        <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+                <div id="my-details-container">
+
+                    <h3> Get In touch </h3>
+                    
+
+                    <h3> My Address </h3>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jamshedpur, India</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>7903066236</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="far fa-envelope"></i>
+                        <span>rahmanwahid022@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center social-icons">
+
+                <ul class="horizontal-list">
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/wahid022/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                    
+
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100039299497875">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+  
+
+  <script src="math.js"></script>
+</body>
+</html>
